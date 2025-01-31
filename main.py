@@ -6,8 +6,8 @@ import models, schemas
 from database import Base
 import os
 
-port = int(os.environ.get("PORT", 8000))  # Usa el puerto de Railway
-
+#port = int(os.environ.get("PORT", 8000))  # Usa el puerto de Railway
+port = int(os.environ.get("PORT", 8080))  # Usa el puerto de Railway
 
 models.Base.metadata.create_all(bind=engine)
 
